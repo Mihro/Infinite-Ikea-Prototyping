@@ -16,7 +16,16 @@ execute if block ~6 ~ ~ #ikea:concrete run tag @s remove wall_east
 execute unless block ~-2 ~ ~ air run tag @s add wall_west
 execute if block ~-2 ~ ~ #ikea:concrete run tag @s remove wall_west
 
-# Decode TileWallsBin to data block
+# TEMP Clear space for walls
+fill ~-1 ~3 ~-1 ~4 ~3 ~4 air replace black_concrete
+
+# Set walls
+execute if entity @s[tag=wall_north] run fill ~ ~3 ~-1 ~3 ~3 ~-1 black_concrete
+execute if entity @s[tag=wall_south] run fill ~ ~3 ~4 ~3 ~3 ~4 black_concrete
+execute if entity @s[tag=wall_east ] run fill ~4 ~3 ~ ~4 ~3 ~3 black_concrete
+execute if entity @s[tag=wall_west ] run fill ~-1 ~3 ~ ~-1 ~3 ~3 black_concrete
+
+# Encode TileWallsBin to data block
 execute if entity @s[tag=!wall_north, tag=!wall_south, tag=!wall_east, tag=!wall_west] run setblock ~4 ~ ~ white_concrete
 execute if entity @s[tag= wall_north, tag=!wall_south, tag=!wall_east, tag=!wall_west] run setblock ~4 ~ ~ orange_concrete
 execute if entity @s[tag=!wall_north, tag= wall_south, tag=!wall_east, tag=!wall_west] run setblock ~4 ~ ~ magenta_concrete
