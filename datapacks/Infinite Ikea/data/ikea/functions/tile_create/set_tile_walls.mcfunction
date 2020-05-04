@@ -1,20 +1,21 @@
 scoreboard players set @s tileWallsBin 0
 
+# [Affected by - tile size]
 # Wall North
-execute unless block ~2 ~ ~-4 air run tag @s add wall_north
-execute if block ~2 ~ ~-4 #ikea:concrete run tag @s remove wall_north
+execute unless block ~2 ~ ~-5 air run tag @s add wall_north
+execute if block ~2 ~ ~-5 #ikea:concrete run tag @s remove wall_north
 
 # Wall South
-execute unless block ~2 ~ ~4 air run tag @s add wall_south
-execute if block ~2 ~ ~4 #ikea:concrete run tag @s remove wall_south
+execute unless block ~2 ~ ~5 air run tag @s add wall_south
+execute if block ~2 ~ ~5 #ikea:concrete run tag @s remove wall_south
 
 # Wall East
-execute unless block ~6 ~ ~ air run tag @s add wall_east
-execute if block ~6 ~ ~ #ikea:concrete run tag @s remove wall_east
+execute unless block ~7 ~ ~ air run tag @s add wall_east
+execute if block ~7 ~ ~ #ikea:concrete run tag @s remove wall_east
 
 # Wall West
-execute unless block ~-2 ~ ~ air run tag @s add wall_west
-execute if block ~-2 ~ ~ #ikea:concrete run tag @s remove wall_west
+execute unless block ~-3 ~ ~ air run tag @s add wall_west
+execute if block ~-3 ~ ~ #ikea:concrete run tag @s remove wall_west
 
 # TEMP Clear space for walls
 fill ~-1 ~3 ~-1 ~4 ~3 ~4 air replace black_concrete
