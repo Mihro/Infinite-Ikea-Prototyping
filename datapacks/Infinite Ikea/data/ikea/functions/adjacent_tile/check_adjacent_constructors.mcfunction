@@ -37,7 +37,7 @@ execute if block ~ ~ ~4 orange_concrete run tag @s remove south_wall
 execute if block ~ ~ ~-4 orange_concrete run tag @s remove north_wall
 
 # If block is air then a constructor is placed
-execute if entity @s[tag=!east_wall] positioned ~4 ~ ~ if block ~ ~ ~ air run function ikea:adjacent_rooms/place_adjacent_constructor
-execute if entity @s[tag=!west_wall] positioned ~-4 ~ ~ if block ~ ~ ~ air run function ikea:adjacent_rooms/place_adjacent_constructor
-execute if entity @s[tag=!south_wall] positioned ~ ~ ~4 if block ~ ~ ~ air run function ikea:adjacent_rooms/place_adjacent_constructor
-execute if entity @s[tag=!north_wall] positioned ~ ~ ~-4 if block ~ ~ ~ air run function ikea:adjacent_rooms/place_adjacent_constructor
+execute if entity @s[tag=!east_wall] positioned ~4 ~ ~ if block ~ ~ ~ air run function ikea:adjacent_tile/place_adjacent_constructor
+execute if entity @s[tag=!west_wall] positioned ~-4 ~ ~ if block ~ ~ ~ air run function ikea:adjacent_tile/place_adjacent_constructor
+execute if entity @s[tag=!south_wall] positioned ~ ~ ~4 if block ~ ~ ~ air run function ikea:adjacent_tile/place_adjacent_constructor
+execute if entity @s[tag=!north_wall] positioned ~ ~ ~-4 if block ~ ~ ~ air run function ikea:adjacent_tile/place_adjacent_constructor
