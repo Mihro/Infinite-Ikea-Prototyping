@@ -1,5 +1,5 @@
 # Print 'Type: #    Index: #'
-tellraw @a [{"text":"Type: "},{"score":{"name":"@s","objective":"tileType"},"italic":true},{"text":"    Index: "},{"score":{"name":"@s","objective":"tilePoolIndex"},"italic":true}]
+tellraw @a [{"text":"Type: "},{"score":{"name":"@s","objective":"TileType"},"italic":true},{"text":"    Index: "},{"score":{"name":"@s","objective":"TilePoolIndex"},"italic":true}]
 
 # Print 'Walls: Yes|No'
 #       'NULL|North|South|East|West'
