@@ -5,8 +5,9 @@ function ikea:tile_create/set_tile_type
 
 function ikea:tile_create/set_tile_structure/pool_from_type
 
-#Set tile gap floor material
-fill ~-1 ~2 ~-1 ~4 ~2 ~4 smooth_stone replace air
+# Set tile gap floor material
+# [Affected by - Tile Size]
+fill ~-2 ~2 ~-2 ~5 ~2 ~5 smooth_stone replace air
 
 function ikea:tile_create/set_tile_walls
 
