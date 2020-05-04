@@ -13,7 +13,7 @@ function ikea:tile_create/set_tile_walls
 # Debug print tile data
 function ikea:tile_create/print_tile_data
 
-### Prepare next tile
-#function ikea:adjacent_tiles/prepare_adjacent_tiles
+# Prepare adjacent tiles
+function ikea:adjacent_tiles/prepare_adjacent_tiles
 
 kill @s[type=!player]
