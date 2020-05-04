@@ -13,9 +13,6 @@ function ikea:tile_create/set_tile_walls
 # Debug print tile data
 function ikea:tile_create/print_tile_data
 
-### Place current tile
-#function ikea:tile_create/translate_data_to_tile
-
 ### Prepare next tile
 #function ikea:adjacent_tiles/prepare_adjacent_tiles
 
