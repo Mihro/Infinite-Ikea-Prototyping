@@ -1,1 +1,1 @@
-data merge block ~ ~ ~ {name:"ikea:dev_4x_tiles/4"}
+data merge block ~ ~ ~ {name:"ikea:dev_4x_tiles/pool_1/4"}
