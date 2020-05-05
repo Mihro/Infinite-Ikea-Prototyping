@@ -1,6 +1,9 @@
 # Random number. Pool size = 4
 scoreboard players set @s rng 4
 function ikea:rng/random_from_self_score
+
+# Weighted rng to TilePoolIndex
+# = operation is 1:1
 scoreboard players operation @s TilePoolIndex = @s rng
 
 # Set structure block
