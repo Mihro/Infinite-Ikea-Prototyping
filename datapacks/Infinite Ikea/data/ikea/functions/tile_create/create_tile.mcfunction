@@ -3,6 +3,8 @@ setblock ~ ~ ~ structure_block{mode:"LOAD",posY:2}
 
 function ikea:tile_create/set_tile_type
 
+function ikea:tile_create/set_tile_rotation
+
 function ikea:tile_create/set_tile_structure/pool_from_type
 
 # Set tile gap floor material

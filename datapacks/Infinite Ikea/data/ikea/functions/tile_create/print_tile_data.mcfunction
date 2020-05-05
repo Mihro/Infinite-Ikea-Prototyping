@@ -1,5 +1,11 @@
 # Print 'Type: #    Index: #'
-tellraw @a [{"text":"Type: "},{"score":{"name":"@s","objective":"TileType"},"italic":true},{"text":"    Index: "},{"score":{"name":"@s","objective":"TilePoolIndex"},"italic":true}]
+tellraw @a [{"text": "Type: "}, {"score": {"name": "@s", "objective": "TileType"}, "italic": true},{"text": "    Index: "}, {"score": {"name": "@s", "objective": "TilePoolIndex"}, "italic": true}]
+
+# Print 'Rotation: #'
+execute if score @s TileRotation matches 1 run tellraw @a [{"text": "Rotation: "}, {"text": "0",   "italic": true}]
+execute if score @s TileRotation matches 2 run tellraw @a [{"text": "Rotation: "}, {"text": "90",  "italic": true}]
+execute if score @s TileRotation matches 3 run tellraw @a [{"text": "Rotation: "}, {"text": "180", "italic": true}]
+execute if score @s TileRotation matches 4 run tellraw @a [{"text": "Rotation: "}, {"text": "270", "italic": true}]
 
 # Print 'Walls: Yes|No'
 #       'NULL|North|South|East|West'
