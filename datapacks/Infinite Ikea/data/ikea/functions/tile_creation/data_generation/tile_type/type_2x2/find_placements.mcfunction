@@ -32,6 +32,6 @@ execute unless entity @e[tag=tile_placement,distance=..1] run scoreboard players
 #execute unless entity @e[tag=tile_placement,distance=..1] run say No valid 2x2 placements
 #execute if entity @e[tag=tile_placement,distance=..1] run say Valid placement: @e[tag=tile_placement,distance=..1]
 
-tag @e[type=area_effect_cloud,distance=..1,sort=random,limit=1] add chosen_placement
+tag @e[type=area_effect_cloud,distance=..1,tag=tile_placement,sort=random,limit=1] add chosen_placement
 kill @e[tag=tile_placement,tag=!chosen_placement,distance=..1]
 #say Chosen: @e[tag=tile_placement,distance=..1]
