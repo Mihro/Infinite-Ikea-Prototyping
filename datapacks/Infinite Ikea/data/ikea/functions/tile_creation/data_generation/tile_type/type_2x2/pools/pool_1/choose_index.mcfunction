@@ -1,5 +1,5 @@
-# Random number. Pool size = 4
-scoreboard players set @s rng 4
+# Random number. Entries = 2
+scoreboard players set @s rng 2
 function ikea:rng/random_from_self_score
 
 # Linear rng to TileIndex

@@ -4,7 +4,7 @@ function ikea:rng/random_from_self_score
 scoreboard players operation @s TileRotation = @s rng
 
 # Temp
-scoreboard players set @s TileRotation 3
+#scoreboard players set @s TileRotation 4
 
 # [1, 2, 3, 4] = [0, 90, 180, 270] degrees
 execute if score @s TileRotation matches 1 run setblock ~3 ~ ~ minecraft:white_concrete
