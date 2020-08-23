@@ -9,9 +9,4 @@ execute if entity @e[tag=placement_south,distance=..1] positioned ~-7 ~ ~ at @e[
 execute if entity @e[tag=placement_west, distance=..1] positioned ~-7 ~ ~-7 at @e[tag=tile_offset,distance=..1] run function ikea:tile_creation/structure_placement/data/type_2x2/set_data_from_offset
 execute if entity @e[tag=placement_north,distance=..1] positioned ~ ~ ~-7 at @e[  tag=tile_offset,distance=..1] run function ikea:tile_creation/structure_placement/data/type_2x2/set_data_from_offset
 
-#execute if entity @e[tag=placement_east, distance=..1] positioned ~ ~ ~ run kill @e[    tag=tile_offset,distance=..1]
-#execute if entity @e[tag=placement_south,distance=..1] positioned ~-7 ~ ~ run kill @e[  tag=tile_offset,distance=..1]
-#execute if entity @e[tag=placement_west, distance=..1] positioned ~-7 ~ ~-7 run kill @e[tag=tile_offset,distance=..1]
-#execute if entity @e[tag=placement_north,distance=..1] positioned ~ ~ ~-7 run kill @e[  tag=tile_offset,distance=..1]
-
 kill @e[tag=tile_placement,distance=..1]
