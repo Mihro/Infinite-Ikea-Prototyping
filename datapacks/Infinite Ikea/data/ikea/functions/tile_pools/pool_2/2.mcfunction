@@ -1,1 +1,0 @@
-data merge block ~ ~ ~ {name:"ikea:dev_4x_tiles/pool_2/2"}
