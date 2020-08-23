@@ -11,10 +11,10 @@ execute positioned ~7 ~ ~ unless block ~1 ~ ~ #ikea:uninitialized_state_block ru
 execute positioned ~-7 ~ ~ unless block ~1 ~ ~ #ikea:uninitialized_state_block run tag @s add obstruction_west
 
 # Summon 4 markers facing each direction
-summon area_effect_cloud ~ ~ ~ {Duration:20,Rotation:[270.0f,0.0f],CustomName:'"Placement East"', Tags:["tile_placement","placement_east", "opposite_west", "opposite_north"]}
-summon area_effect_cloud ~ ~ ~ {Duration:20,Rotation:[  0.0f,0.0f],CustomName:'"Placement South"',Tags:["tile_placement","placement_south","opposite_north","opposite_east" ]}
-summon area_effect_cloud ~ ~ ~ {Duration:20,Rotation:[ 90.0f,0.0f],CustomName:'"Placement West"', Tags:["tile_placement","placement_west", "opposite_east", "opposite_south"]}
-summon area_effect_cloud ~ ~ ~ {Duration:20,Rotation:[180.0f,0.0f],CustomName:'"Placement North"',Tags:["tile_placement","placement_north","opposite_south","opposite_west" ]}
+summon area_effect_cloud ~ ~ ~ {Duration:100,Rotation:[270.0f,0.0f],CustomName:'"Placement East"', Tags:["tile_placement","placement_east", "opposite_west", "opposite_north"]}
+summon area_effect_cloud ~ ~ ~ {Duration:100,Rotation:[  0.0f,0.0f],CustomName:'"Placement South"',Tags:["tile_placement","placement_south","opposite_north","opposite_east" ]}
+summon area_effect_cloud ~ ~ ~ {Duration:100,Rotation:[ 90.0f,0.0f],CustomName:'"Placement West"', Tags:["tile_placement","placement_west", "opposite_east", "opposite_south"]}
+summon area_effect_cloud ~ ~ ~ {Duration:100,Rotation:[180.0f,0.0f],CustomName:'"Placement North"',Tags:["tile_placement","placement_north","opposite_south","opposite_west" ]}
 
 # Kill placements that are obstructed
 execute as @s[tag=obstruction_north] run kill @e[tag=!opposite_north,distance=..1]
