@@ -1,0 +1,2 @@
+function ikea:tile_creation/structure_placement/data/type_1x1/rotation/set_rotation
+function ikea:tile_creation/structure_placement/data/type_1x1/name/choose_pool
