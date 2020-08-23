@@ -1,15 +1,14 @@
 # [ Affected by - Tile Size ]
-# [ Negative Corner = -(Walkway Width) ]
-# [ Positive Corner = (Tile Size-Walkway Width)-1 ]
-execute if block ~ ~ ~ structure_block[mode=load] run fill ~-2 ~2 ~-2 ~5 ~3 ~5 air replace #ikea:cleanup_tiles
-execute if block ~ ~ ~ #ikea:is_tile run fill ~ ~ ~ ~4 ~ ~ air replace #ikea:concrete
-execute if block ~ ~ ~ #ikea:is_tile run fill ~ ~ ~ ~4 ~ ~ air replace diamond_block
-execute if block ~ ~ ~ #ikea:is_tile run fill ~ ~ ~ ~4 ~ ~ air replace stone
-execute if block ~ ~ ~ #ikea:is_tile run setblock ~ ~ ~ air
+execute if block ~ ~ ~ structure_block[mode=load] run fill ~ ~3 ~ ~7 ~4 ~7 air replace #ikea:cleanup_tiles
+fill ~ ~ ~ ~4 ~ ~ air replace #ikea:concrete
+fill ~ ~1 ~ ~ ~1 ~ air replace diamond_block
+fill ~ ~1 ~ ~ ~1 ~ air replace stone
+fill ~ ~1 ~ ~ ~1 ~ air replace redstone_block
+fill ~ ~ ~ ~ ~ ~ air replace structure_block[mode=load]
 
 # [ Affected by - Tile Size ]
-# [ Coord = (Tile Size)-2 ]
-execute positioned ~6 ~ ~ if block ~ ~ ~ #ikea:is_tile run function ikea:cleanup/recursive_remove_tile
-execute positioned ~-6 ~ ~ if block ~ ~ ~ #ikea:is_tile run function ikea:cleanup/recursive_remove_tile
-execute positioned ~ ~ ~6 if block ~ ~ ~ #ikea:is_tile run function ikea:cleanup/recursive_remove_tile
-execute positioned ~ ~ ~-6 if block ~ ~ ~ #ikea:is_tile run function ikea:cleanup/recursive_remove_tile
+# [ Coord = (Tile Size) ]
+execute positioned ~7 ~ ~ if block ~ ~ ~ #ikea:is_tile run function ikea:cleanup/recursive_remove_tile
+execute positioned ~-7 ~ ~ if block ~ ~ ~ #ikea:is_tile run function ikea:cleanup/recursive_remove_tile
+execute positioned ~ ~ ~7 if block ~ ~ ~ #ikea:is_tile run function ikea:cleanup/recursive_remove_tile
+execute positioned ~ ~ ~-7 if block ~ ~ ~ #ikea:is_tile run function ikea:cleanup/recursive_remove_tile
