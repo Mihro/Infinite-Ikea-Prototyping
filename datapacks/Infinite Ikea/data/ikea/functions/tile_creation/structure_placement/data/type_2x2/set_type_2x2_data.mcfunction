@@ -1,6 +1,17 @@
 setblock ~1 ~ ~ magenta_concrete
-execute as @e[tag=tile_placement,distance=..1] at @s run function ikea:tile_creation/structure_placement/data/type_2x2/setblock_structure_blocks
+execute if entity @e[tag=placement_east, distance=..1] run summon area_effect_cloud ~ ~ ~ {Duration:100,Tags:["tile_offset"],Rotation:[0.0f,-90.0f]}
+execute if entity @e[tag=placement_south,distance=..1] run summon area_effect_cloud ~-7 ~ ~ {Duration:100,Tags:["tile_offset"],Rotation:[0.0f,-90.0f]}
+execute if entity @e[tag=placement_west, distance=..1] run summon area_effect_cloud ~-7 ~ ~-7 {Duration:100,Tags:["tile_offset"],Rotation:[0.0f,-90.0f]}
+execute if entity @e[tag=placement_north,distance=..1] run summon area_effect_cloud ~ ~ ~-7 {Duration:100,Tags:["tile_offset"],Rotation:[0.0f,-90.0f]}
 
-function ikea:tile_creation/structure_placement/data/type_2x2/rotation/set_rotation
+execute if entity @e[tag=placement_east, distance=..1] positioned ~ ~ ~ at @e[    tag=tile_offset,distance=..1] run function ikea:tile_creation/structure_placement/data/type_2x2/set_data_from_offset
+execute if entity @e[tag=placement_south,distance=..1] positioned ~-7 ~ ~ at @e[  tag=tile_offset,distance=..1] run function ikea:tile_creation/structure_placement/data/type_2x2/set_data_from_offset
+execute if entity @e[tag=placement_west, distance=..1] positioned ~-7 ~ ~-7 at @e[tag=tile_offset,distance=..1] run function ikea:tile_creation/structure_placement/data/type_2x2/set_data_from_offset
+execute if entity @e[tag=placement_north,distance=..1] positioned ~ ~ ~-7 at @e[  tag=tile_offset,distance=..1] run function ikea:tile_creation/structure_placement/data/type_2x2/set_data_from_offset
 
-#function ikea:tile_creation/structure_placement/data/type_2x2/name/choose_pool
+#execute if entity @e[tag=placement_east, distance=..1] positioned ~ ~ ~ run kill @e[    tag=tile_offset,distance=..1]
+#execute if entity @e[tag=placement_south,distance=..1] positioned ~-7 ~ ~ run kill @e[  tag=tile_offset,distance=..1]
+#execute if entity @e[tag=placement_west, distance=..1] positioned ~-7 ~ ~-7 run kill @e[tag=tile_offset,distance=..1]
+#execute if entity @e[tag=placement_north,distance=..1] positioned ~ ~ ~-7 run kill @e[  tag=tile_offset,distance=..1]
+
+kill @e[tag=tile_placement,distance=..1]
