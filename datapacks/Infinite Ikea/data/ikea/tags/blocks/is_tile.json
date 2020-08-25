@@ -1,5 +1,6 @@
 {
 	"values": [
+		"minecraft:stone",
 		"minecraft:command_block",
 		"minecraft:structure_block"
 	]
