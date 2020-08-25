@@ -1,1 +1,0 @@
-execute if block ~ ~1 ~ stone run setblock ~ ~1 ~ redstone_block
