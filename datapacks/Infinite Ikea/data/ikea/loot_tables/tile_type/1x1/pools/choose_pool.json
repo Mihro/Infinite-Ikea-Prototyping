@@ -1,0 +1,22 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:loot_table",
+              "name": "ikea:tile_type/1x1/pools/pool_1"
+            },
+            {
+              "type": "minecraft:loot_table",
+              "name": "ikea:tile_type/1x1/pools/pool_2"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
