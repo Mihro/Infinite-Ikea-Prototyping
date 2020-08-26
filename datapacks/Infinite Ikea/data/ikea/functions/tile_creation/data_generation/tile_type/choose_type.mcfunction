@@ -4,9 +4,9 @@ function ikea:rng/random_from_self_score
 
 # Weighted rng -> TileType
 # [ Weight: 75% ]
-execute if score @s rng matches 1..2 run scoreboard players set @s TileType 2
+execute if score @s rng matches 1..3 run scoreboard players set @s TileType 1
 # [ Weight: 25% ]
-execute if score @s rng matches 3..4 run scoreboard players set @s TileType 2
+execute if score @s rng matches 4 run scoreboard players set @s TileType 2
 
 # Place data marker block
 execute if score @s TileType matches 1 run setblock ~2 ~ ~ white_concrete

@@ -1,0 +1,1 @@
+function ikea:tile_creation/structure_placement/placement/type_1x1/walls
