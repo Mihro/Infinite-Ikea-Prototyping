@@ -16,6 +16,10 @@
               ],
               "entity": "this",
               "replace": false
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{ikea:{type:1,pool:1,entry:1,cmd:\"function ikea:tile_creation/type/1x1/generate_data\"}}"
             }
           ]
         },
@@ -32,6 +36,10 @@
               ],
               "entity": "this",
               "replace": false
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{ikea:{type:1,pool:1,entry:2,cmd:\"function ikea:tile_creation/type/1x1/generate_data\"}}"
             }
           ]
         },
