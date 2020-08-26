@@ -4,29 +4,66 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:alternatives",
-          "children": [
+          "type": "minecraft:item",
+          "name": "minecraft:white_concrete",
+          "weight": 1,
+          "functions": [
             {
-              "type": "minecraft:item",
-              "name": "minecraft:stone",
-              "weight": 2,
-              "functions": [
-                {
-                  "function": "minecraft:set_nbt",
-                  "tag": "{tag:{ikea:{type:1,function:\"ikea:test1\"}}}"
-                }
-              ]
-            },
+              "function": "minecraft:set_lore",
+              "lore": [
+                "Pool: 1",
+                "Entry: 1"
+              ],
+              "entity": "this",
+              "replace": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:white_concrete",
+          "weight": 1,
+          "functions": [
             {
-              "type": "minecraft:item",
-              "name": "minecraft:stone",
-              "weight": 1,
-              "functions": [
-                {
-                  "function": "minecraft:set_nbt",
-                  "tag": "{tag:{ikea:{type:1,function:\"ikea:test2\"}}}"
-                }
-              ]
+              "function": "minecraft:set_lore",
+              "lore": [
+                "Pool: 1",
+                "Entry: 2"
+              ],
+              "entity": "this",
+              "replace": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:white_concrete",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "Pool: 1",
+                "Entry: 3"
+              ],
+              "entity": "this",
+              "replace": false
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:white_concrete",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "Pool: 1",
+                "Entry: 4"
+              ],
+              "entity": "this",
+              "replace": false
             }
           ]
         }
@@ -35,6 +72,11 @@
         {
           "function": "minecraft:set_count",
           "count": 1
+        },
+        {
+          "function": "minecraft:set_name",
+          "name": "Tile Type: 1x1",
+          "entity": "this"
         }
       ]
     }
