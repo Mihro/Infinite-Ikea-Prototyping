@@ -1,1 +1,0 @@
-function ikea:tile_creation/structure_placement/placement/type_2x2/walls

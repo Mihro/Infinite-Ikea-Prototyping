@@ -1,6 +1,0 @@
-function ikea:tile_creation/data_generation/generate_data
-function ikea:tile_creation/structure_placement/data/set_data
-function ikea:tile_creation/structure_placement/placement/spawn_structure
-function ikea:tile_creation/adjacent_constructor_placement/place_adjacent_constructors
-
-kill @s[tag=tile_origin]

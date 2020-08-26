@@ -1,1 +1,0 @@
-function ikea:tile_creation/data_generation/tile_type/type_1x1/pools/choose_pool

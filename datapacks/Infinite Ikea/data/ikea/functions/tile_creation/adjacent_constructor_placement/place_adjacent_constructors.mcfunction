@@ -1,1 +1,0 @@
-function ikea:tile_creation/adjacent_constructor_placement/choose_type

@@ -1,2 +1,0 @@
-execute if score @s TileType matches 1 run function ikea:tile_creation/adjacent_constructor_placement/type_1x1/place_adjacent_constructors
-execute if score @s TileType matches 2 run function ikea:tile_creation/adjacent_constructor_placement/type_2x2/place_adjacent_constructors
