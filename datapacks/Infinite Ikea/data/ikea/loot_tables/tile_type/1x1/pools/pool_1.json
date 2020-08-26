@@ -19,7 +19,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{ikea:{type:1,pool:1,entry:1,cmd:\"function ikea:tile_creation/type/1x1/generate_data\"}}"
+              "tag": "{ikea:{entry:1}}"
             }
           ]
         },
@@ -39,7 +39,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{ikea:{type:1,pool:1,entry:2,cmd:\"function ikea:tile_creation/type/1x1/generate_data\"}}"
+              "tag": "{ikea:{entry:2}}"
             }
           ]
         },
@@ -56,6 +56,10 @@
               ],
               "entity": "this",
               "replace": false
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{ikea:{entry:3}}"
             }
           ]
         },
@@ -72,6 +76,10 @@
               ],
               "entity": "this",
               "replace": false
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{ikea:{entry:4}}"
             }
           ]
         }
@@ -85,6 +93,10 @@
           "function": "minecraft:set_name",
           "name": "Tile Type: 1x1",
           "entity": "this"
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{ikea:{type:1,pool:1,cmd:\"execute as @e[tag=tile_root,distance=..1] run function ikea:tile_creation/type/1x1/data/generate_data\"}}"
         }
       ]
     }
