@@ -1,11 +1,13 @@
+tellraw @a "\n===== Generated Data ====="
+
 # Print 'Type: #    Pool: #'
 tellraw @a [{"text": "Type: "}, {"score": {"name": "@s", "objective": "TileType"}, "italic": true}, {"text": "    Pool: "}, {"score": {"name": "@s", "objective": "TilePool"}, "italic": true}, {"text": "    Entry: "}, {"score": {"name": "@s", "objective": "TileEntry"}, "italic": true}]
 
-# Print 'Rotation: #'
-execute if score @s TileRotation matches 1 run tellraw @a [{"text": "Rotation: "}, {"text": "0",   "italic": true}]
-execute if score @s TileRotation matches 2 run tellraw @a [{"text": "Rotation: "}, {"text": "90",  "italic": true}]
-execute if score @s TileRotation matches 3 run tellraw @a [{"text": "Rotation: "}, {"text": "180", "italic": true}]
-execute if score @s TileRotation matches 4 run tellraw @a [{"text": "Rotation: "}, {"text": "270", "italic": true}]
+## Print 'Rotation: #'
+#execute if score @s TileRotation matches 1 run tellraw @a [{"text": "Rotation: "}, {"text": "0",   "italic": true}]
+#execute if score @s TileRotation matches 2 run tellraw @a [{"text": "Rotation: "}, {"text": "90",  "italic": true}]
+#execute if score @s TileRotation matches 3 run tellraw @a [{"text": "Rotation: "}, {"text": "180", "italic": true}]
+#execute if score @s TileRotation matches 4 run tellraw @a [{"text": "Rotation: "}, {"text": "270", "italic": true}]
 
 ## Print 'Obstructions: Yes|No'
 ##		'NULL|North|South|East|West'
