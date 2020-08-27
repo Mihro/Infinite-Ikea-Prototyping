@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"st",
+				"structure_placement"
+			],
+			[
+				"tile",
+				"tile_root"
+			],
+			[
+				"set",
+				"setblock"
+			],
+			[
 				"ce",
 				"clear_activated_tile"
 			],
@@ -13,10 +25,6 @@
 			],
 			[
 				"til",
-				"tile_creation"
-			],
-			[
-				"tile",
 				"tile_creation"
 			],
 			[
@@ -64,35 +72,19 @@
 	"buffers":
 	[
 		{
-			"file": "functions/tile_creation/initialize_tile.mcfunction",
+			"file": "functions/tile_creation/construct_tile.mcfunction",
 			"settings":
 			{
-				"buffer_size": 315,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "functions/tile_creation/create_tile.mcfunction",
-			"settings":
-			{
-				"buffer_size": 306,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "functions/tile_creation/structure_placement/data/type_1x1/rotation/set_rotation.mcfunction",
-			"settings":
-			{
-				"buffer_size": 464,
+				"buffer_size": 267,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "functions/tile_creation/structure_placement/data/type_1x1/rotation/rotate_90.mcfunction",
+			"file": "functions/tile_creation/type/2x2/structure_placement/spawn_structure.mcfunction",
 			"settings":
 			{
-				"buffer_size": 73,
+				"buffer_size": 23,
 				"line_ending": "Windows"
 			}
 		}
@@ -109,16 +101,16 @@
 		"selected_items":
 		[
 			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
 				"package",
 				"Package Control: List Packages"
 			],
 			[
 				"Package Control: ",
 				"Package Control: Install Package"
-			],
-			[
-				"pack",
-				"Package Control: Remove Package"
 			],
 			[
 				"",
@@ -148,20 +140,55 @@
 		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea",
 		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions",
 		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation",
-		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/adjacent_constructor_placement",
-		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/adjacent_constructor_placement/type_1x1",
-		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/adjacent_constructor_placement/type_2x2",
-		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/structure_placement",
-		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/structure_placement/data",
-		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/structure_placement/data/type_1x1",
-		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/structure_placement/data/type_1x1/rotation",
-		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/structure_placement/data/type_2x2",
-		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/structure_placement/data/type_2x2/rotation",
-		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/structure_placement/placement",
-		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/structures"
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/type",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/type/1x1",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/type/1x1/structure_placement",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/type/1x1/structure_placement/data",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/type/2x2",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/type/2x2/structure_placement",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/loot_tables",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/loot_tables/tile_type",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/loot_tables/tile_type/1x1",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/loot_tables/tile_type/1x1/pools",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/loot_tables/tile_type/2x2",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/loot_tables/tile_type/2x2/pools",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/structures",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/structures/dev_4x_tile_bordered",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/structures/dev_4x_tile_bordered/type_2x2",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/structures/dev_4x_tile_bordered/type_2x2/pool_1"
 	],
 	"file_history":
 	[
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/type/2x2/spawn_structure.mcfunction",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/loot_tables/tile_type/2x2/pools/pool_1.json",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/loot_tables/tile_type/choose_type.json",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/type/1x1/structure_placement/spawn_structure.mcfunction",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/loot_tables/tile_type/1x1/pools/pool_1.json",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/loot_tables/tile_type/1x1/pools/pool_2.json",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/generate_data.mcfunction",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/choose_structure.mcfunction",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/choose_rotation.mcfunction",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/type/1x1/structure_placement/data/set_data.mcfunction",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/cleanup/recursive_remove_tile.mcfunction",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/type/1x1/structure_placement/adjacent/place_adjacent_triggers.mcfunction",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/type/1x1/structure_placement/data/rotation/set_rotation.mcfunction",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/type/1x1/structure_placement/data/name/set_name.mcfunction",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/type/1x1/structure_placement/data/rotation/rotate_90.mcfunction",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/type/1x1/structure_placement/data/set_name.mcfunction",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/loot_tables/tile_type/1x1/pools/choose_pool.json",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/loot_tables/tile_type/2x2/pools/choose_pool.json",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/cleanup/clear_unactivated_tile.mcfunction",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/cleanup/clear_activated_tile.mcfunction",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/tags/blocks/tile_meta_block.json",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/tags/blocks/structure_load.json",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/tags/blocks/root_block.json",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/place_tile_primer.mcfunction",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/initialize_tile.mcfunction",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/print_data.mcfunction",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/type/1x1/data/generate_data.mcfunction",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/create_tile.mcfunction",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/structure_placement/data/type_1x1/rotation/rotate_90.mcfunction",
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/structure_placement/data/type_1x1/rotation/set_rotation.mcfunction",
 		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/adjacent_constructor_placement/place_adjacent_constructors.mcfunction",
 		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/adjacent_constructor_placement/choose_type.mcfunction",
 		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/adjacent_constructor_placement/type_1x1/place_adjacent_constructors.mcfunction",
@@ -173,7 +200,6 @@
 		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/structure_placement/data/choose_type.mcfunction",
 		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/structure_placement/data/type_1x1/name/choose_pool.mcfunction",
 		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/structure_placement/data/type_1x1/name/pool_1/set_name.mcfunction",
-		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/structure_placement/data/type_1x1/rotation/set_rotation.mcfunction",
 		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/structure_placement/placement/type_2x2/spawn_structure.mcfunction",
 		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/data_generation/generate_data.mcfunction",
 		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/data_generation/choose_rotation.mcfunction",
@@ -181,18 +207,13 @@
 		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/data_generation/tile_type/type_1x1/generate_1x1_data.mcfunction",
 		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/data_generation/tile_type/type_1x1/pools/choose_pool.mcfunction",
 		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/data_generation/tile_type/type_1x1/pools/pool_1/choose_index.mcfunction",
-		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/cleanup/recursive_remove_tile.mcfunction",
 		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/tags/blocks/is_tile.json",
-		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/cleanup/clear_unactivated_tile.mcfunction",
-		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/cleanup/clear_activated_tile.mcfunction",
-		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/create_tile.mcfunction",
 		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/adjacent_constructor_placement/type_2x2/place_adjacent_constructors.mcfunction",
 		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/data_generation/tile_type/type_2x2/find_placements.mcfunction",
 		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/data_generation/tile_type/type_2x2/pools/pool_1/choose_index.mcfunction",
 		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/tags/blocks/trigger_block.json",
 		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/structure_placement/data/type_2x2/trigger_structure_blocks.mcfunction",
 		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/structure_placement/data/type_2x2/set_data_from_offset.mcfunction",
-		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/initialize_tile.mcfunction",
 		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/structure_placement/new_tile/constructor.mcfunction",
 		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/structure_placement/data/type_2x2/set_type_2x2_data.mcfunction",
 		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/structure_placement/placement/type_2x2/walls.mcfunction",
@@ -265,13 +286,11 @@
 		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/data_generation/tile_type.mcfunction",
 		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/data_generation/tile_pool/tile_pool.mcfunction",
 		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/structure_placement/set_name.mcfunction",
-		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/structure_placement/structure_block_modifiers/modify_name.mcfunction",
-		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/structure_placement/structure_block_modifiers/modify_structure_block_data.mcfunction",
-		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/tags/blocks/cleanup_tiles.json"
+		"/E/Mihro/Minecraft/Profiles/1.16 Vanilla/saves/Infinite Ikea Proto v3.0/datapacks/Infinite Ikea/data/ikea/functions/tile_creation/structure_placement/structure_block_modifiers/modify_name.mcfunction"
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 37.0
 	},
 	"find_in_files":
 	{
@@ -286,6 +305,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"pool_1",
+			"              \"tag\": \"{ikea:{entry:2,structure:\\\"ikea:dev_4x_tile_bordered/type_2x2/pool_1/2\\\"}}\"\n",
+			"type_1x1",
+			"is_tile",
+			"\"{\\\\\\\"text\\\\\\\":\\\\\\\"Type: 1\\\\\\\",\\\\\\\"color\\\\\\\":\\\\\\\"white\\\\\\\"}\",",
+			"                \"{\\\\\\\"",
+			"\"{\\\"text\\\":\\\"Type: 1\\\",\\\"color\\\":\\\"white\\\"}\",",
+			"\"{\\\\\\\"text\\\\\\\":\\\\\\\"Type: 1\\\\\\\",\\\\\\\"color\\\\\\\":\\\\\\\"white\\\\\\\"}\",",
+			"'{\"text\":\"Type: 1\",\"color\":\"white\"}',",
+			"\"Type: 1\",",
+			":",
 			"say",
 			"7",
 			"execute if score @s TileRotation matches 1 positioned ~ ~ ~ at @e[  tag=tile_pivot,distance=..1] run function ikea:tile_creation/structure_placement/data/type_2x2/name/choose_pool\nexecute if score @s TileRotation matches 2 positioned ~7 ~ ~ at @e[ tag=tile_pivot,distance=..1] run function ikea:tile_creation/structure_placement/data/type_2x2/name/choose_pool\nexecute if score @s TileRotation matches 3 positioned ~7 ~ ~7 at @e[tag=tile_pivot,distance=..1] run function ikea:tile_creation/structure_placement/data/type_2x2/name/choose_pool\nexecute if score @s TileRotation matches 4 positioned ~ ~ ~7 at @e[ tag=tile_pivot,distance=..1] run function ikea:tile_creation/structure_placement/data/type_2x2/name/choose_pool\n\n",
@@ -326,116 +356,24 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "functions/tile_creation/initialize_tile.mcfunction",
+					"file": "functions/tile_creation/construct_tile.mcfunction",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 315,
+						"buffer_size": 267,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/language-mcfunction/mcfunction.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "functions/tile_creation/create_tile.mcfunction",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 306,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								119,
-								119
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/language-mcfunction/mcfunction.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "functions/tile_creation/structure_placement/data/type_1x1/rotation/set_rotation.mcfunction",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 464,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								188,
-								188
-							],
-							[
-								316,
-								316
-							],
-							[
-								445,
-								445
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/language-mcfunction/mcfunction.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "functions/tile_creation/structure_placement/data/type_1x1/rotation/rotate_90.mcfunction",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 73,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
+								267,
+								267
 							]
 						],
 						"settings":
@@ -448,17 +386,45 @@
 					},
 					"stack_index": 1,
 					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "functions/tile_creation/type/2x2/structure_placement/spawn_structure.mcfunction",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/language-mcfunction/mcfunction.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
 				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 37.0
 	},
 	"input":
 	{
-		"height": 44.0
+		"height": 49.0
 	},
 	"layout":
 	{
@@ -491,7 +457,7 @@
 	"project": "Ikea.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 70.0
 	},
 	"save_all_on_build": true,
 	"select_file":
