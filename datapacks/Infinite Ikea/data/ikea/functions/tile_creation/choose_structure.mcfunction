@@ -8,7 +8,6 @@ execute store result score @s TileType run data get block ~ ~ ~1 Items[0].tag.ik
 execute store result score @s TilePool run data get block ~ ~ ~1 Items[0].tag.ikea.pool
 execute store result score @s TileEntry run data get block ~ ~ ~1 Items[0].tag.ikea.entry
 data modify block ~ ~ ~ Command set from block ~ ~ ~1 Items[0].tag.ikea.cmd
-data merge block ~ ~ ~ {auto:1b}
 
 # Display type
 execute if score @s TileType matches 1 run setblock ~1 ~ ~1 white_concrete

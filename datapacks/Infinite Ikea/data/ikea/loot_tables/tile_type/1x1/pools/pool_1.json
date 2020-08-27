@@ -11,15 +11,17 @@
             {
               "function": "minecraft:set_lore",
               "lore": [
+                "Type: 1",
                 "Pool: 1",
-                "Entry: 1"
+                "Entry: 1",
+                "Structure: 1x1 > pool_1 > 1"
               ],
               "entity": "this",
               "replace": false
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{ikea:{entry:1}}"
+              "tag": "{ikea:{entry:1,structure:\"ikea:dev_4x_tile_bordered/type_1x1/pool_1/1\"}}"
             }
           ]
         },
@@ -31,15 +33,17 @@
             {
               "function": "minecraft:set_lore",
               "lore": [
+                "Type: 1",
                 "Pool: 1",
-                "Entry: 2"
+                "Entry: 2",
+                "Structure: 1x1 > pool_1 > 2"
               ],
               "entity": "this",
               "replace": false
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{ikea:{entry:2}}"
+              "tag": "{ikea:{entry:2,structure:\"ikea:dev_4x_tile_bordered/type_1x1/pool_1/2\"}}"
             }
           ]
         },
@@ -51,15 +55,17 @@
             {
               "function": "minecraft:set_lore",
               "lore": [
+                "Type: 1",
                 "Pool: 1",
-                "Entry: 3"
+                "Entry: 3",
+                "Structure: 1x1 > pool_1 > 3"
               ],
               "entity": "this",
               "replace": false
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{ikea:{entry:3}}"
+              "tag": "{ikea:{entry:3,structure:\"ikea:dev_4x_tile_bordered/type_1x1/pool_1/3\"}}"
             }
           ]
         },
@@ -71,15 +77,17 @@
             {
               "function": "minecraft:set_lore",
               "lore": [
+                "Type: 1",
                 "Pool: 1",
-                "Entry: 4"
+                "Entry: 4",
+                "Structure: 1x1 > pool_1 > 4"
               ],
               "entity": "this",
               "replace": false
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{ikea:{entry:4}}"
+              "tag": "{ikea:{entry:4,structure:\"ikea:dev_4x_tile_bordered/type_1x1/pool_1/4\"}}"
             }
           ]
         }
@@ -91,12 +99,12 @@
         },
         {
           "function": "minecraft:set_name",
-          "name": "Tile Type: 1x1",
+          "name": "Tile Data",
           "entity": "this"
         },
         {
           "function": "minecraft:set_nbt",
-          "tag": "{ikea:{type:1,pool:1,cmd:\"execute as @e[tag=tile_root,distance=..1] run function ikea:tile_creation/type/1x1/data/generate_data\"}}"
+          "tag": "{ikea:{type:1,pool:1,cmd:\"execute as @e[tag=tile_root,distance=..1] run function ikea:tile_creation/type/1x1/structure_placement/spawn_structure\"}}"
         }
       ]
     }

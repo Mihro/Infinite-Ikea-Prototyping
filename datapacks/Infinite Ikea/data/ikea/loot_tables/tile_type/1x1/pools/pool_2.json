@@ -4,7 +4,107 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:empty"
+          "type": "minecraft:item",
+          "name": "minecraft:white_concrete",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "Type: 1",
+                "Pool: 2",
+                "Entry: 1",
+                "Structure: 1x1 > pool_2 > 1"
+              ],
+              "entity": "this",
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{ikea:{entry:1,structure:\"ikea:dev_4x_tile_bordered/type_1x1/pool_2/1\"}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:white_concrete",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "Type: 1",
+                "Pool: 2",
+                "Entry: 2",
+                "Structure: 1x1 > pool_2 > 2"
+              ],
+              "entity": "this",
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{ikea:{entry:2,structure:\"ikea:dev_4x_tile_bordered/type_1x1/pool_2/2\"}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:white_concrete",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "Type: 1",
+                "Pool: 2",
+                "Entry: 3",
+                "Structure: 1x1 > pool_2 > 3"
+              ],
+              "entity": "this",
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{ikea:{entry:3,structure:\"ikea:dev_4x_tile_bordered/type_1x1/pool_2/3\"}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:white_concrete",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "Type: 1",
+                "Pool: 2",
+                "Entry: 4",
+                "Structure: 1x1 > pool_2 > 4"
+              ],
+              "entity": "this",
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{ikea:{entry:4,structure:\"ikea:dev_4x_tile_bordered/type_1x1/pool_2/4\"}}"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": 1
+        },
+        {
+          "function": "minecraft:set_name",
+          "name": "Tile Data",
+          "entity": "this"
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{ikea:{type:1,pool:2,cmd:\"execute as @e[tag=tile_root,distance=..1] run function ikea:tile_creation/type/1x1/structure_placement/spawn_structure\"}}"
         }
       ]
     }
