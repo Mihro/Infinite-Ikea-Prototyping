@@ -1,0 +1,68 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:white_concrete",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "Type: 2",
+                "Pool: 1",
+                "Entry: 1",
+                "Structure: 2x2 > pool_1 > 1"
+              ],
+              "entity": "this",
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{ikea:{entry:1,structure:{1:\"ikea:dev_4x_tile_bordered/type_2x2/pool_1/1_1\",2:\"ikea:dev_4x_tile_bordered/type_2x2/pool_1/1_2\",3:\"ikea:dev_4x_tile_bordered/type_2x2/pool_1/1_3\",4:\"ikea:dev_4x_tile_bordered/type_2x2/pool_1/1_4\"}}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:white_concrete",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "Type: 2",
+                "Pool: 1",
+                "Entry: 2",
+                "Structure: 2x2 > pool_1 > 2"
+              ],
+              "entity": "this",
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{ikea:{entry:2,structure:{1:\"ikea:dev_4x_tile_bordered/type_2x2/pool_1/2_1\",2:\"ikea:dev_4x_tile_bordered/type_2x2/pool_1/2_2\",3:\"ikea:dev_4x_tile_bordered/type_2x2/pool_1/2_3\",4:\"ikea:dev_4x_tile_bordered/type_2x2/pool_1/2_4\"}}}"
+            }
+          ]
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": 1
+        },
+        {
+          "function": "minecraft:set_name",
+          "name": "Tile Data",
+          "entity": "this"
+        },
+        {
+          "function": "minecraft:set_nbt",
+          "tag": "{ikea:{type:2,pool:1,cmd:\"execute as @e[tag=tile_root,distance=..1] run function ikea:tile_creation/type/2x2/structure_placement/spawn_structure\"}}"
+        }
+      ]
+    }
+  ]
+}
