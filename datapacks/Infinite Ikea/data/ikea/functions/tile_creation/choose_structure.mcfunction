@@ -1,3 +1,4 @@
+setblock ~ ~ ~ command_block[facing=up]
 setblock ~ ~ ~1 chest[facing=west]
 
 # Place item with relevant data, from loot table, into the chest
