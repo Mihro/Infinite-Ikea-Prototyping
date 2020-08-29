@@ -5,3 +5,6 @@ summon area_effect_cloud ~ ~ ~ {Duration:100,Tags:["tile_creation","tile_placeme
 
 tag @e[tag=tile_placement,distance=..1,sort=random,limit=1] add placement_chosen
 kill @e[tag=tile_placement,tag=!placement_chosen,distance=..1]
+
+# Success check
+execute if entity @e[tag=placement_chosen,distance=..1] run setblock ~1 ~ ~ yellow_concrete
