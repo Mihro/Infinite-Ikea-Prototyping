@@ -1,0 +1,1 @@
+say Spawn 2x2 structure
