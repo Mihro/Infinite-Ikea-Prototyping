@@ -6,7 +6,8 @@ function ikea:tile_creation/type/2x2/place/position/find_placement
 # Success check
 execute if block ~1 ~ ~ magenta_concrete if entity @e[tag=chosen_placement] run setblock ~1 ~ ~ light_blue_concrete
 # If no placement found then spawn a 1x1 tile instead
-execute unless entity @e[tag=chosen_placement] run function ikea:tile_creation/type/1x1/place/spawn_structure
+execute unless entity @e[tag=chosen_placement] run say Defaulting to fitting a 1x1 tile
+execute unless entity @e[tag=chosen_placement] run function ikea:tile_creation/type/1x1/default_to/construct_1x1_tile
 
 # Set structure block data
 execute if block ~1 ~ ~ light_blue_concrete at @e[tag=chosen_placement] run function ikea:tile_creation/type/2x2/place/data/set_data
