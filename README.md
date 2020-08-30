@@ -26,6 +26,6 @@ Development is still in the prototype stage, so tiles use temporary structures a
 ---
 
 ## TODO
-- Add 1x2 & 1x3 tile types.
-- Add a walling system that places walls where there are obstructions (player can manually place obstructions to restrict generation).
-- Add a cosmetic walling system to break up the visual of neverending floor space.
+- [ ] Add 1x2 & 1x3 tile types.
+- [ ] Add a walling system that places walls where there are obstructions (player can manually place obstructions to restrict generation).
+- [ ] Add a cosmetic walling system to break up the visual of neverending floor space.
