@@ -104,7 +104,7 @@
         },
         {
           "function": "minecraft:set_nbt",
-          "tag": "{ikea:{type:1,pool:2,cmd:\"execute as @e[tag=tile_root,distance=..1] run function ikea:tile_creation/type/1x1/structure_placement/spawn_structure\"}}"
+          "tag": "{ikea:{type:1,pool:2,cmd:\"function ikea:tile_creation/type/1x1/place/spawn_structure\"}}"
         }
       ]
     }
