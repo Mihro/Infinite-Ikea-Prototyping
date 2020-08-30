@@ -60,7 +60,7 @@
         },
         {
           "function": "minecraft:set_nbt",
-          "tag": "{ikea:{type:2,pool:1,cmd:\"function ikea:tile_creation/type/2x2/structure_placement/spawn_structure\"}}"
+          "tag": "{ikea:{type:2,pool:1,cmd:\"function ikea:tile_creation/type/2x2/place/spawn_structure\"}}"
         }
       ]
     }

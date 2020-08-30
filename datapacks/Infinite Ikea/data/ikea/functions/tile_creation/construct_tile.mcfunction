@@ -1,17 +1,14 @@
-# Set status to constructing
-setblock ~1 ~ ~ orange_concrete
+# If tile is untriggered, set status to constructing
+execute if block ~1 ~ ~ #ikea:untriggered_state run setblock ~1 ~ ~ orange_concrete
 
-# Set self up for creation
-function ikea:tile_creation/initialize_tile
-# Success check
-#execute if block ~1 ~ ~ orange_concrete if entity @e[tag=tile_root,distance=..1] run setblock ~1 ~ ~ magenta_concrete
+# Clear root & trigger blocks
+execute if block ~1 ~ ~ orange_concrete run fill ~ ~ ~ ~ ~1 ~ stone
 
-# Choose a structure and copy details to self
-#execute as @e[tag=tile_root,distance=..1] run function ikea:tile_creation/choose_structure
-#execute as @e[tag=tile_root,distance=..1] run function ikea:tile_creation/print_data
-function ikea:tile_creation/choose_structure
+# Choose a structure as a loot table item (structure data in NBT)
+execute if block ~1 ~ ~ orange_concrete run function ikea:tile_creation/choose_structure
 # Success check
-#execute unless block ~ ~ ~ command_block{Command:""} if entity @e[tag=tile_root,distance=..1,scores={TileType=1..,TilePool=1..,TileEntry=1..}] run setblock ~1 ~ ~ light_blue_concrete
+execute unless block ~ ~ ~ command_block{Command:""} unless block ~1 ~ ~1 air run setblock ~1 ~ ~ magenta_concrete
 
 # Run structure-specific function chain
-data merge block ~ ~ ~ {auto:1b}
+execute if block ~1 ~ ~ magenta_concrete run setblock ~ ~1 ~ redstone_block
+setblock ~ ~1 ~ air
