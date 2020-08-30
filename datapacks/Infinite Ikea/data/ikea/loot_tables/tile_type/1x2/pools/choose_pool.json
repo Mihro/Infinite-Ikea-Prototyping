@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "ikea:tile_type/1x2/pools/choose_pool"
+          "name": "ikea:tile_type/1x2/pools/pool_1"
         }
       ]
     }
