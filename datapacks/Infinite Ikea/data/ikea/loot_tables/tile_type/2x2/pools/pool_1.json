@@ -46,6 +46,50 @@
               "tag": "{ikea:{entry:2,structure:{1:\"ikea:dev_4x_tile_bordered/type_2x2/pool_1/2_1\",2:\"ikea:dev_4x_tile_bordered/type_2x2/pool_1/2_2\",3:\"ikea:dev_4x_tile_bordered/type_2x2/pool_1/2_3\",4:\"ikea:dev_4x_tile_bordered/type_2x2/pool_1/2_4\"}}}"
             }
           ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:white_concrete",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "Type: 2",
+                "Pool: 1",
+                "Entry: 3",
+                "Structure: 2x2 > pool_1 > 3"
+              ],
+              "entity": "this",
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{ikea:{entry:3,structure:{1:\"ikea:dev_4x_tile_bordered/type_2x2/pool_1/3_1\",2:\"ikea:dev_4x_tile_bordered/type_2x2/pool_1/3_2\",3:\"ikea:dev_4x_tile_bordered/type_2x2/pool_1/3_3\",4:\"ikea:dev_4x_tile_bordered/type_2x2/pool_1/3_4\"}}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:white_concrete",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "Type: 2",
+                "Pool: 1",
+                "Entry: 4",
+                "Structure: 2x2 > pool_1 > 4"
+              ],
+              "entity": "this",
+              "replace": false
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{ikea:{entry:4,structure:{1:\"ikea:dev_4x_tile_bordered/type_2x2/pool_1/4_1\",2:\"ikea:dev_4x_tile_bordered/type_2x2/pool_1/4_2\",3:\"ikea:dev_4x_tile_bordered/type_2x2/pool_1/4_3\",4:\"ikea:dev_4x_tile_bordered/type_2x2/pool_1/4_4\"}}}"
+            }
+          ]
         }
       ],
       "functions": [
