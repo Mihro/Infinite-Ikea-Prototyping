@@ -5,7 +5,23 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "ikea:tile_type/1x3/pools/choose_pool"
+          "name": "ikea:tile_type/1x1/pools/choose_pool",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "ikea:tile_type/2x2/pools/choose_pool",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "ikea:tile_type/1x2/pools/choose_pool",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "ikea:tile_type/1x3/pools/choose_pool",
+          "weight": 1
         }
       ]
     }
