@@ -20,7 +20,7 @@ Type | Weight
 1x2|1
 1x3|1
 
-<img src="https://i.imgur.com/xLIBmbx.png" width=630 height=600>
+<img src="https://i.imgur.com/dBVaMAD.png" width=630 height=600>
 
 ---
 
