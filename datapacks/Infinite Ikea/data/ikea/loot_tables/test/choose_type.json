@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "ikea:test/1x1/pools/choose_pool",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "ikea:test/2x2/pools/choose_pool",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}

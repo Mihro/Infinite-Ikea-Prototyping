@@ -1,0 +1,13 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "ikea:test/1x1/pools/pool_1"
+        }
+      ]
+    }
+  ]
+}

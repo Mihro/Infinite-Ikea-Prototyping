@@ -1,6 +1,6 @@
 # Place loot item into chest (structure data in item NBT)
 setblock ~ ~ ~1 chest[facing=west]
-loot replace block ~ ~ ~1 container.0 loot ikea:tile_type/choose_type
+loot replace block ~ ~ ~1 container.0 loot ikea:test/choose_type
 
 # Copy command from loot item NBT
 setblock ~ ~ ~ command_block[facing=up]{auto:0b}

@@ -1,5 +1,6 @@
 # Clear structure
-fill ~ ~2 ~ ~7 ~10 ~7 air replace #ikea:cleanup_tiles
+fill ~ ~2 ~ ~7 ~12 ~7 air replace #ikea:clearup_problem_blocks
+fill ~ ~2 ~ ~7 ~12 ~7 air
 # Clear state
 fill ~1 ~ ~ ~3 ~ ~1 air replace #ikea:concrete
 # Clear loot chest
