@@ -1,5 +1,5 @@
 # Place structure block
-setblock ^ ^ ^ structure_block{mode: "LOAD", posY: 3, showboundingbox: 1b}
+setblock ^ ^ ^ structure_block{mode: "LOAD", posY: 3, showboundingbox: 0b}
 
 # Set structure block name data
 function ikea:tile_creation/type/1x1/place/data/set_name
